@@ -19,6 +19,7 @@ public class TankMovement
     private bool enableMovement = true; // if this is true we are allowed to accept input from the player
 
     private Transform tankReference; // a reference to the tank gameobject
+    [SerializeField] private GameObject turretReference;
 
 
     /// <summary>
@@ -54,7 +55,7 @@ public class TankMovement
     /// <summary>
     /// Handles the movement of our tank
     /// </summary>
-    public void HandleMovement(float ForwardMovement, float RotationMovement)
+    public void HandleMovement(float ForwardMovement, float RotationMovement, float TurretRotationMovement)
     {
         // if we can't move don't
         if(enableMovement == false)
@@ -63,6 +64,7 @@ public class TankMovement
         }
         Move(ForwardMovement);
         Turn(RotationMovement);
+        TurretTurn(TurretRotationMovement);
 
         tankSoundEffects.PlayTankEngine(ForwardMovement, RotationMovement); // update our audio based on our input
     }
@@ -88,6 +90,15 @@ public class TankMovement
 
         // update our rigidboy with this new rotation
         rigidbody.MoveRotation(rigidbody.rotation * turnRotation); // rotate our rigidbody based on our input.
+    }
+    private void TurretTurn(float RotationalAmount)
+    {
+        // get the key input value, multiply it by the turn speed, multiply it by the time between frames
+        float turnAngle = RotationalAmount * turnSpeed * Time.deltaTime; // the angle in degrees we want to turn our tank
+        Quaternion turnRotation = Quaternion.Euler(0f, turnAngle, 0); // essentially turn our angle into a quarternion for our rotation
+
+        // update our rigidboy with this new rotation
+       turretReference.transform.Rotate(0, turnAngle, 0); // rotate our rigidbody based on our input.
     }
 }
 

@@ -31,6 +31,7 @@ public class Tank : MonoBehaviour
         TankGameEvents.OnObjectTakeDamageEvent -= TankTakenDamage; // assign our health function to our event so we can take damage
         TankGameEvents.OnGameStartedEvent -= EnableInput; // assign our tank movement function to the game started event
     }
+  
 
     // Start is called before the first frame update
     void Start()
@@ -49,7 +50,7 @@ public class Tank : MonoBehaviour
     void Update()
     { 
         // passes in the values from our key input, to our motor to make it move
-        tankMovement.HandleMovement(tankControls.ReturnKeyValue(TankControls.KeyType.Movement), tankControls.ReturnKeyValue(TankControls.KeyType.Rotation));
+        tankMovement.HandleMovement(tankControls.ReturnKeyValue(TankControls.KeyType.Movement), tankControls.ReturnKeyValue(TankControls.KeyType.Rotation), tankControls.ReturnKeyValue(TankControls.KeyType.TurretRotation));
         tankMainGun.UpdateMainGun(tankControls.ReturnKeyValue(TankControls.KeyType.Fire)); // grab the input from the fire key
     }
 
