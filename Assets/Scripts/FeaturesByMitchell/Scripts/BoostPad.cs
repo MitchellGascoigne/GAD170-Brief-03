@@ -8,18 +8,11 @@ namespace MitchellGascoigne
     public class BoostPad : MonoBehaviour
     // Copy from shellexplosion script
     {
-        private void OnControllerColliderHit(ControllerColliderHit hit)
+
+        private void OnTriggerEnter(Collider other)
         {
-            switch (hit.gameObject.tag)
-            {
-                case "SpeedBoost":
-                   // speed = 24; 
-                    break;
-            }
-
-
+            Debug.Log(other.gameObject.name);
         }
-
     }
 
 }
