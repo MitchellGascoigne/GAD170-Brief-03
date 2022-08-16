@@ -14,8 +14,12 @@ namespace MitchellGascoigne
             //Debug.Log(other.gameObject.name);
             if (other.CompareTag("Player")) 
             {
-                // check if angle between tanks foward direction and boostpads foward direction if < 90, then run boost code (foward direction of transform)
+                // check if angle between tanks foward direction and boostpads foward direction if < 90, then run boost code (forward direction of transform)
                 other.GetComponent<Tank>().tankMovement.speed = 24;
+              
+                
+                
+                
                 // check if angle between tanks foward direction and boostpads foward direction if > 90 then reduce speed
                 // https://docs.unity3d.com/ScriptReference/Vector3.Angle.html
                 // kenny.nl (assets) 3d, racing kit
