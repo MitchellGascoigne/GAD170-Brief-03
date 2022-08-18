@@ -15,9 +15,9 @@ public class TankControls
     public KeyCode backwards = KeyCode.S; // the backwards button
     public KeyCode left = KeyCode.A; // the left button
     public KeyCode right = KeyCode.D; // the right button
-    public KeyCode turretLeft = KeyCode.Q;
-    public KeyCode turretRight = KeyCode.E;
-    public KeyCode fireButton = KeyCode.Space; // the button to fire
+    public KeyCode turretLeft = KeyCode.Q; // rotate turret left                // Modification
+    public KeyCode turretRight = KeyCode.E; // rotate turret right             // Modification
+    public KeyCode fireButton = KeyCode.Space; // the button to fire           
     private bool fireButtonWasPressed = false; // has the fire button been pressed?
 
 
@@ -58,7 +58,7 @@ public class TankControls
                     }
                     break;
                 }
-            case KeyType.TurretRotation:
+            case KeyType.TurretRotation:                                                      // Modification 
                 {
                     if (Input.GetKey(turretRight)) // if we are pressing the right button
                     {

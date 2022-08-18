@@ -64,7 +64,7 @@ public class TankMovement
         }
         Move(ForwardMovement);
         Turn(RotationMovement);
-        TurretTurn(TurretRotationMovement);
+        TurretTurn(TurretRotationMovement);  // Modification
 
         tankSoundEffects.PlayTankEngine(ForwardMovement, RotationMovement); // update our audio based on our input
     }
@@ -82,16 +82,16 @@ public class TankMovement
     /// <summary>
     /// Rotates the tank on the Y axis
     /// </summary>
-    private void Turn(float RotationalAmount)
+    private void Turn(float RotationalAmount)                                                                                                //Modification
     {
         // get the key input value, multiply it by the turn speed, multiply it by the time between frames
-        float turnAngle = RotationalAmount * turnSpeed * Time.deltaTime; // the angle in degrees we want to turn our tank
-        Quaternion turnRotation = Quaternion.Euler(0f, turnAngle, 0); // essentially turn our angle into a quarternion for our rotation
+        float turnAngle = RotationalAmount * turnSpeed * Time.deltaTime; // the angle in degrees we want to turn our tank                    
+        Quaternion turnRotation = Quaternion.Euler(0f, turnAngle, 0); // essentially turn our angle into a quaternion for our rotation      
 
         // update our rigidboy with this new rotation
         rigidbody.MoveRotation(rigidbody.rotation * turnRotation); // rotate our rigidbody based on our input.
     }
-    private void TurretTurn(float RotationalAmount)
+    private void TurretTurn(float RotationalAmount)                                                                                          //Modification
     {
         // get the key input value, multiply it by the turn speed, multiply it by the time between frames
         float turnAngle = RotationalAmount * turnSpeed * Time.deltaTime; // the angle in degrees we want to turn our tank
@@ -101,4 +101,3 @@ public class TankMovement
        turretReference.transform.Rotate(0, turnAngle, 0); // rotate our rigidbody based on our input.
     }
 }
-
