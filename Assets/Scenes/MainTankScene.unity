@@ -154,7 +154,7 @@ GameObject:
   - component: {fileID: 46008257}
   - component: {fileID: 46008256}
   - component: {fileID: 46008255}
-  - component: {fileID: 46008254}
+  - component: {fileID: 46008258}
   m_Layer: 0
   m_Name: BoostPad 5
   m_TagString: Untagged
@@ -177,19 +177,6 @@ Transform:
   m_Father: {fileID: 423761324}
   m_RootOrder: 4
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &46008254
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 46008252}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: afc02514ec9222d43ae426df06f79990, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  playerTankTag: player
 --- !u!65 &46008255
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -253,6 +240,19 @@ MeshFilter:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 46008252}
   m_Mesh: {fileID: 10202, guid: 0000000000000000e000000000000000, type: 0}
+--- !u!114 &46008258
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 46008252}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: afc02514ec9222d43ae426df06f79990, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  playerTankTag: player
 --- !u!1001 &169093095
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -365,7 +365,7 @@ GameObject:
   - component: {fileID: 239359907}
   - component: {fileID: 239359906}
   - component: {fileID: 239359905}
-  - component: {fileID: 239359904}
+  - component: {fileID: 239359908}
   m_Layer: 0
   m_Name: BoostPad 4
   m_TagString: Untagged
@@ -388,19 +388,6 @@ Transform:
   m_Father: {fileID: 423761324}
   m_RootOrder: 3
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &239359904
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 239359902}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: afc02514ec9222d43ae426df06f79990, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  playerTankTag: player
 --- !u!65 &239359905
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -464,6 +451,19 @@ MeshFilter:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 239359902}
   m_Mesh: {fileID: 10202, guid: 0000000000000000e000000000000000, type: 0}
+--- !u!114 &239359908
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 239359902}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: afc02514ec9222d43ae426df06f79990, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  playerTankTag: player
 --- !u!1001 &346244476
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -998,7 +998,7 @@ PrefabInstance:
     - target: {fileID: 1318264945699395747, guid: aba5dc34144335c43a163d644929c642,
         type: 3}
       propertyPath: m_RootOrder
-      value: 23
+      value: 22
       objectReference: {fileID: 0}
     - target: {fileID: 1318264945699395747, guid: aba5dc34144335c43a163d644929c642,
         type: 3}
@@ -1281,7 +1281,7 @@ Transform:
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 22
+  m_RootOrder: 21
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1001 &1154043260
 PrefabInstance:
@@ -1565,8 +1565,8 @@ GameObject:
   - component: {fileID: 1262466212}
   - component: {fileID: 1262466216}
   - component: {fileID: 1262466215}
+  - component: {fileID: 1262466217}
   - component: {fileID: 1262466214}
-  - component: {fileID: 1262466213}
   m_Layer: 0
   m_Name: BoostPad 6
   m_TagString: Untagged
@@ -1589,19 +1589,6 @@ Transform:
   m_Father: {fileID: 423761324}
   m_RootOrder: 5
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &1262466213
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1262466211}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: afc02514ec9222d43ae426df06f79990, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  playerTankTag: player
 --- !u!65 &1262466214
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -1665,6 +1652,19 @@ MeshFilter:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1262466211}
   m_Mesh: {fileID: 10202, guid: 0000000000000000e000000000000000, type: 0}
+--- !u!114 &1262466217
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1262466211}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: afc02514ec9222d43ae426df06f79990, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  playerTankTag: player
 --- !u!1 &1266554071 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: -927199367670048503, guid: c4266e9b117358741b5221fdb3896e2e,
@@ -2360,37 +2360,6 @@ BoxCollider:
   serializedVersion: 2
   m_Size: {x: 1, y: 1.0000002, z: 6.123235e-17}
   m_Center: {x: 0, y: 0, z: 0}
---- !u!1 &1595118497
-GameObject:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  serializedVersion: 6
-  m_Component:
-  - component: {fileID: 1595118499}
-  m_Layer: 0
-  m_Name: EventManager
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!4 &1595118499
-Transform:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1595118497}
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -0.5496559, y: -3.0558739, z: 11.589661}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_ConstrainProportionsScale: 0
-  m_Children: []
-  m_Father: {fileID: 0}
-  m_RootOrder: 20
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1641528002 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: -927199367670048503, guid: 992c4a39423e14441b0ca193156ada69,
@@ -2429,6 +2398,18 @@ BoxCollider:
   serializedVersion: 2
   m_Size: {x: 2.329286, y: 4.507465, z: 1.705155}
   m_Center: {x: -0.31175002, y: 2.2537324, z: 0.15414065}
+--- !u!114 &1725627750 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 203192482432291051, guid: 4f8d0b4d33463f649ac704d8f7edfbc4,
+    type: 3}
+  m_PrefabInstance: {fileID: 203192481103957616}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f4688fdb7df04437aeb418b961361dc5, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1001 &1728838509
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -2589,10 +2570,11 @@ MonoBehaviour:
   m_GameObject: {fileID: 1798758662}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: afc02514ec9222d43ae426df06f79990, type: 3}
+  m_Script: {fileID: 11500000, guid: 5d8458a7640790a42ae9642d87da0a0a, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  playerTankTag: player
+  boostPadCounter: {fileID: 1725627750}
+  boostPadCount: 0
 --- !u!1 &1807505805
 GameObject:
   m_ObjectHideFlags: 0
@@ -2605,7 +2587,7 @@ GameObject:
   - component: {fileID: 1807505810}
   - component: {fileID: 1807505809}
   - component: {fileID: 1807505808}
-  - component: {fileID: 1807505807}
+  - component: {fileID: 1807505811}
   m_Layer: 0
   m_Name: BoostPad 3
   m_TagString: Untagged
@@ -2628,19 +2610,6 @@ Transform:
   m_Father: {fileID: 423761324}
   m_RootOrder: 2
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &1807505807
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1807505805}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: afc02514ec9222d43ae426df06f79990, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  playerTankTag: player
 --- !u!65 &1807505808
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -2704,6 +2673,19 @@ MeshFilter:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1807505805}
   m_Mesh: {fileID: 10202, guid: 0000000000000000e000000000000000, type: 0}
+--- !u!114 &1807505811
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1807505805}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: afc02514ec9222d43ae426df06f79990, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  playerTankTag: player
 --- !u!1 &1819025943 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 203192481575562343, guid: 4f8d0b4d33463f649ac704d8f7edfbc4,
@@ -3092,7 +3074,7 @@ PrefabInstance:
     - target: {fileID: 6734679720947066908, guid: a504c6c563098ec4f9c3c8dd35ce8250,
         type: 3}
       propertyPath: m_RootOrder
-      value: 24
+      value: 23
       objectReference: {fileID: 0}
     - target: {fileID: 6734679720947066908, guid: a504c6c563098ec4f9c3c8dd35ce8250,
         type: 3}
@@ -3244,7 +3226,7 @@ GameObject:
   - component: {fileID: 2073146361}
   - component: {fileID: 2073146360}
   - component: {fileID: 2073146359}
-  - component: {fileID: 2073146358}
+  - component: {fileID: 2073146362}
   m_Layer: 0
   m_Name: BoostPad 2
   m_TagString: Untagged
@@ -3267,19 +3249,6 @@ Transform:
   m_Father: {fileID: 423761324}
   m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &2073146358
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 2073146356}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: afc02514ec9222d43ae426df06f79990, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  playerTankTag: player
 --- !u!65 &2073146359
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -3343,6 +3312,19 @@ MeshFilter:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 2073146356}
   m_Mesh: {fileID: 10202, guid: 0000000000000000e000000000000000, type: 0}
+--- !u!114 &2073146362
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2073146356}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: afc02514ec9222d43ae426df06f79990, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  playerTankTag: player
 --- !u!1001 &2090927643
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -3663,7 +3645,7 @@ PrefabInstance:
     - target: {fileID: 5205716003693117244, guid: ed8dd714897084545af638c6814d49fe,
         type: 3}
       propertyPath: m_RootOrder
-      value: 21
+      value: 20
       objectReference: {fileID: 0}
     - target: {fileID: 5205716003693117244, guid: ed8dd714897084545af638c6814d49fe,
         type: 3}
