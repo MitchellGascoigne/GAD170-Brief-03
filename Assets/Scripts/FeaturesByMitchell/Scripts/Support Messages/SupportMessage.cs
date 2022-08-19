@@ -7,9 +7,9 @@ namespace MitchellGascoigne
     public class SupportMessage : MonoBehaviour
     {
         [Header("A list of support messages")]
-        private List<string> supportMessage = new List<string>(); // a list of all support messages for us to use.
+        [SerializeField] private List<string> supportMessage = new List<string>(); // a list of all support messages for us to use.
 
-        public void CreateSupport()
+        public void Start()
         {
             supportMessage.Add("We believe in you!");
             supportMessage.Add("Good Luck!");
@@ -18,7 +18,7 @@ namespace MitchellGascoigne
         public void SetSupportMessage()
         {
             // A method that Debug.logs one of the "Support Messages" at random to the console
-            Debug.Log(supportMessage[Random.Range(0, supportMessage.Count)]);
+            Debug.Log(supportMessage[Random.Range(0, supportMessage.Count-1)]);
         }
         // Also, you must subscribe(+=) and unsubscribe(-=) from the event OnEnable and OnDisable.It's like a pair; you have to do both.
          private void OnEnable()

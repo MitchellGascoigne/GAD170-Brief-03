@@ -13,7 +13,7 @@ namespace MitchellGascoigne
         // Set "Click" button screen positioning in retrospect to the screens aspect ratio
         private void OnGUI()
         {
-            if (GUI.Button(new Rect(Screen.width / 2 - 50, 450, 200, 30), "Support Message"))
+            if (GUI.Button(new Rect(Screen.width / 2 - 50, 20, 200, 30), "Support Message"))
             {
                 if (OnClicked != null)
                 {
